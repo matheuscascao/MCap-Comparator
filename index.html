@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+
+        <title>MCap Comparator</title>
+    </head>
+
+    <body>
+        
+        <div class="headerBox">
+            <h1>MCap Comparator</h1>
+        </div>
+
+        <div class="contentsBox">
+
+            <div class="searchBox">
+                <input id="assetPrice" type="text" placeholder="Asset 1" list="assetsList" class="search1"></input> 
+                <button id="calcSubmit" type="submit" class="calculate"><p class="calcText">CALC</p></button>
+                <input id="assetMCap" type="text" placeholder="Asset 2" list="assetsList" class="search2"></input>
+                <datalist id="assetsList"></datalist>
+            </div>
+
+        </div>
+
+        <div class="resultsBox" id="resultsBox">
+
+        </div>
+
+    </body>
+
+    <script src="js/StocksFetcher.js"></script>
+    <script src="js/CoingeckoFetcher.js"></script>
+    <script src="js/DatalistFiller.js"></script>
+    <script src="js/Calculate.js"></script>
+    <script src="js/DOM_manipulator.js"></script>
+    <script src="js/index.js"></script>
+
+</html>
