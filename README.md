@@ -5,3 +5,5 @@ It works by fetching data from the Coingecko and Alpha Vantage API therefore, bo
 
 MCap Comparator works by calculating the hypothetical price of an asset if it had the market capitalization of another asset.
 Asset1 is the asset with the price to be changed and Asset 2 is the asset with the market cap to be compared.
+
+Github pages link: https://matheuscascao.github.io/MCap-Comparator/
