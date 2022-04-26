@@ -120,7 +120,7 @@
     border-radius: 15px;
     border-color: #05052b;
 
-    padding: 10px;
+    padding: 0px 40px;
 }
 
 .resultsPrice{
@@ -131,4 +131,10 @@
 
 .boldText{
     font-weight: 900;
+}
+
+.resultsPricePreview{
+    font-size: 30px;
+
+    text-align: center;
 }

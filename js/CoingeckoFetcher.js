@@ -11,9 +11,7 @@ class CoingeckoFetcher{
     async getAllData(){
         let response = await fetch(this.url);
         let allData = response.json();
-        // console.log(response);
-        // console.log(allData);
-        // console.log(await allData);
+
         return await allData;
     };
 
@@ -34,7 +32,7 @@ class CoingeckoFetcher{
         let cryptoList = await this.getAllData();
 
         for(let crypto of cryptoList){
-            if(crypto.name == this.cryptoName){
+            if(crypto.name.toUpperCase() == this.cryptoName.toUpperCase()){
                 let results = {
                     'price': crypto.current_price,
                     'market_cap': crypto.market_cap,

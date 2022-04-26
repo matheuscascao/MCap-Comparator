@@ -19,10 +19,11 @@ class Calculate{
             let cryptData = new CoingeckoFetcher(geckoUrl);
             let crypInfo = await cryptData.cryptoSearcher(this.asset);
             return crypInfo;
-        } else{
+        } else {
             // return asset price if it is a stock
             let stockData = new StockFetcher(this.asset);
             let stockInfos = await stockData.getStockInfos();
+            
             return stockInfos;
         };
     };
